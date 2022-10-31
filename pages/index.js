@@ -69,7 +69,7 @@ export default function Home() {
                 data-aos="fade-up"
                 className=" p-10 py-10 bg-sky-100 relative rounded-lg text-justify font-sourcecodeproM text-md py-5 leading-8 text-gray-800 md:text-xl max-w-5xl mx-auto shadow-lg"
               >
-                I'm Dzaky, a student in Gadjah Mada University majoring in
+                I'&apos;m Dzaky, a student in Gadjah Mada University majoring in
                 Chemistry batch 2022, who enjoys programming and technology.
                 <br></br>
                 <br></br>You can scroll down or check my social media in the
