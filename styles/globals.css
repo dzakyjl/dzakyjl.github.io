@@ -1,3 +1,7 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
 html,
 body {
   padding: 0;
@@ -15,12 +19,38 @@ a {
   box-sizing: border-box;
 }
 
-@media (prefers-color-scheme: dark) {
-  html {
-    color-scheme: dark;
+.blinking-cursor:after {
+  content: "|";
+  @apply text-blue-900;
+  animation: blink 1s step-start infinite;
+}
+
+.bold {
+  font-weight: bold;
+}
+
+@keyframes blink {
+  50% {
+    opacity: 0;
   }
-  body {
-    color: white;
-    background: black;
-  }
+}
+
+@font-face {
+  font-family: "sourcecodeproL";
+  src: url("../public/SourceCodePro-LightIt.otf");
+}
+
+@font-face {
+  font-family: "sourcecodepro";
+  src: url("../public/SourceCodePro-ExtraLight.otf");
+}
+
+@font-face {
+  font-family: "sourcecodeproM";
+  src: url("../public/SourceCodePro-Regular.otf");
+}
+
+@font-face {
+  font-family: "sourcecodeproB";
+  src: url("../public/SourceCodePro-Semibold.otf");
 }
